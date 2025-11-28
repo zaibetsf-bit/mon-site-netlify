@@ -5,6 +5,38 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Grades • Empire Français</title>
   <link rel="stylesheet" href="style.css" />
+  <style>
+    .grades-list {
+      line-height: 1.6;
+    }
+    .rank-category {
+      margin: 1.8rem 0;
+    }
+    .rank-category h3 {
+      font-family: 'Cinzel', serif;
+      color: #002654;
+      margin: 1.4rem 0 0.8rem;
+      font-size: 1.4rem;
+      text-align: center;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      color: #d4af37;
+      border-bottom: 1px solid #d4af37;
+      padding-bottom: 0.3rem;
+    }
+    .rank {
+      margin: 0.6rem 0;
+      padding-left: 1.2rem;
+      position: relative;
+    }
+    .rank::before {
+      content: "•";
+      color: #002654;
+      font-weight: bold;
+      position: absolute;
+      left: 0;
+    }
+  </style>
 </head>
 <body>
   <header><h1>Hiérarchie Militaire</h1></header>
@@ -15,17 +47,58 @@
     <a href="carte.html">Carte</a>
     <a href="contact.html">Contact</a>
   </nav>
-  <main><div class="content">
-    <h2>🎖️ Grades de l’Armée Impériale</h2>
-    <p><strong>• Soldat / Tambour</strong> – Recrue de base</p>
-    <p><strong>• Caporal</strong> – Chef d’équipe</p>
-    <p><strong>• Sergent</strong> – Discipline et entraînement</p>
-    <p><strong>• Lieutenant</strong> – Commandement d’escouade</p>
-    <p><strong>• Capitaine</strong> – Commandement de compagnie</p>
-    <p><strong>• Commandant / Colonel</strong> – Régiment</p>
-    <p><strong>• Général / Maréchal</strong> – État-major impérial</p>
-    <p><em>Les uniformes varient selon le grade. Voir Discord pour références.</em></p>
-  </div></main>
-  <footer><p>© 2025 Empire Français RP</p></footer>
+  <main>
+    <div class="content grades-list">
+      <h2>🎖️ Grades de l’Armée Impériale</h2>
+
+      <div class="rank-category">
+        <h3>Leadership Impérial</h3>
+        <div class="rank">@Empereur Napoléon</div>
+        <div class="rank">@Conseiller de l'Empereur</div>
+      </div>
+
+      <div class="rank-category">
+        <h3>Officiers Supérieurs</h3>
+        <div class="rank">@Maréchal d'Empire</div>
+        <div class="rank">@Maréchal de Corps d'Armée</div>
+        <div class="rank">@Général en Chef</div>
+        <div class="rank">@Général de Division</div>
+        <div class="rank">@Général de Brigade</div>
+        <div class="rank">@Général Chef d'État-Major</div>
+      </div>
+
+      <div class="rank-category">
+        <h3>Officiers</h3>
+        <div class="rank">@Colonel</div>
+        <div class="rank">@Lieutenant-Colonel</div>
+        <div class="rank">@Chef de Bataillon</div>
+        <div class="rank">@Major</div>
+        <div class="rank">@Capitaine</div>
+        <div class="rank">@Lieutenant</div>
+        <div class="rank">@Sous-Lieutenant</div>
+        <div class="rank">@Aspirant</div>
+      </div>
+
+      <div class="rank-category">
+        <h3>Sous-Officiers</h3>
+        <div class="rank">@Adjudant</div>
+        <div class="rank">@Maréchal des Logis-Chef</div>
+        <div class="rank">@Maréchal des Logis</div>
+      </div>
+
+      <div class="rank-category">
+        <h3>Hommes du Rang</h3>
+        <div class="rank">@Caporal-Chef</div>
+        <div class="rank">@Caporal</div>
+        <div class="rank">@Soldat</div>
+        <div class="rank">@Conscrit</div>
+      </div>
+
+      <p style="margin-top: 2rem; font-style: italic; text-align: center; color: #6b5e4d;">
+        L’ordre de la hiérarchie est sacré. Chaque grade porte l’honneur de l’Empire.
+      </p>
+    </div>
+  </main>
+  <footer><p>© 2025 Empire Français RP • État-Major Impérial</p></footer>
 </body>
 </html>
