@@ -19,6 +19,8 @@ body {
   background-color: var(--parchment);
   color: var(--text-dark);
   line-height: 1.6;
+  padding: 0;
+  margin: 0;
 }
 
 header {
@@ -33,6 +35,7 @@ header h1 {
   font-family: 'Cinzel', serif;
   font-size: 2.2rem;
   letter-spacing: 1px;
+  margin: 0;
 }
 
 nav {
@@ -45,12 +48,13 @@ nav a {
   color: var(--imperial-blue);
   text-decoration: none;
   font-weight: bold;
-  margin: 0 12px;
-  font-size: 1.1rem;
+  margin: 0 8px;
+  font-size: 1.05rem;
 }
 
 nav a:hover {
   text-decoration: underline;
+  color: #001a3d;
 }
 
 main {
@@ -87,6 +91,16 @@ footer {
   padding: 1.5rem;
   color: #6b5e4d;
   font-size: 0.95rem;
+  background-color: #f0e9d8;
+  border-top: 1px solid #e8e0d0;
+}
+
+/* Icônes simples */
+.icon-calendar::before {
+  content: "📅 ";
+}
+.icon-medal::before {
+  content: "🎖️ ";
 }
 
 /* Responsive */
