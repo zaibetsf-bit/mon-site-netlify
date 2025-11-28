@@ -1,4 +1,4 @@
-/* css/style.css */
+/* style.css */
 @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@700&family=Lora:ital,wght@0,400;0,600;1,400&display=swap');
 
 :root {
@@ -19,8 +19,6 @@ body {
   background-color: var(--parchment);
   color: var(--text-dark);
   line-height: 1.6;
-  padding: 0;
-  margin: 0;
 }
 
 header {
@@ -95,15 +93,6 @@ footer {
   border-top: 1px solid #e8e0d0;
 }
 
-/* Icônes simples */
-.icon-calendar::before {
-  content: "📅 ";
-}
-.icon-medal::before {
-  content: "🎖️ ";
-}
-
-/* Responsive */
 @media (max-width: 600px) {
   nav a {
     display: block;
